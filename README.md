@@ -1,2 +1,7 @@
-# autonomous
-   HYBRID AUTONOMOUS GPS NAVIGATION USING PATH PLANNING ALGORITHMS
+This project presents a real-time autonomous navigation system for robots that relies on coordinate-based map inputs rather than GPS sensors. 
+The system allows users to define a start point and a destination directly on a web-based Leaflet map. Once the points are selected, the robot navigates efficiently using a hybrid path-planning approach that integrates A*, Dijkstra, and Ant Colony Optimisation (ACO) algorithms. These algorithms work together to determine the optimal route, balancing efficiency and adaptability.
+The robot is controlled by an ESP32 microcontroller, which receives movement commands from a Python Flask backend. The backend is responsible for calculating the route, managing dynamic replanning, and providing real-time updates on the robot’s position. The robot is equipped with ultrasonic sensors to detect obstacles along its path.
+When an obstacle is detected, the system dynamically recalculates the route to ensure safe navigation.
+The system also includes a real-time visualisation interface, showing the robot’s position, planned route, and detected obstacles on the map. This allows users to monitor the robot’s progress and decision-making process during navigation.
+By combining hybrid path-planning algorithms, sensor-driven obstacle detection, and map-based coordinate navigation, the project demonstrates a practical and flexible approach to autonomous navigation in indoor or campus environments. The system is suitable for robotics research, educational demonstrations, and applications where GPS may be unavailable or unreliable.
+
